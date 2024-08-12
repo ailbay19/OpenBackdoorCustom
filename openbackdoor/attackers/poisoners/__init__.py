@@ -9,7 +9,7 @@ from .trojanlm_poisoner import TrojanLMPoisoner
 from .neuba_poisoner import NeuBAPoisoner
 from .por_poisoner import PORPoisoner
 from .lwp_poisoner import LWPPoisoner
-
+from .multisentence_syntactic import MultiSynBkdPoisoner
 POISONERS = {
     "base": Poisoner,
     "badnets": BadNetsPoisoner,
@@ -21,7 +21,8 @@ POISONERS = {
     "trojanlm": TrojanLMPoisoner,
     "neuba": NeuBAPoisoner,
     "por": PORPoisoner,
-    "lwp": LWPPoisoner
+    "lwp": LWPPoisoner,
+    "multisyn": MultiSynBkdPoisoner
 }
 
 def load_poisoner(config):
