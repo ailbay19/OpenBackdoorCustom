@@ -33,7 +33,9 @@
             "label_consistency": false,
             "label_dirty": false,
             "load": false,
-            "template_id": -1
+            "template_id": -1,
+            "poison_data_basepath": "./poison_data/imdb/",
+            "poisoned_data_path": "./poison_data/imdb/pd/"
         }
     },
     "clean-tune": false
